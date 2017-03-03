@@ -1,0 +1,57 @@
+Floodgap HELP: What is Gopher?
+updated 27 December 2000
+
+   gopher  n.  1. Any of various short tailed, burrowing mammals of
+   the family Geomyidae, of North America.  2. (Amer. colloq.)
+   Native or inhabitant of Minnesota: the Gopher State.
+   3. (Amer. colloq.) One who runs errands, does odd-jobs, fetches
+   or delivers documents for office staff.  4. (computer tech.)
+   Software following a simple protocol for tunneling through a TCP/IP
+   internet.
+
+Welcome to Gopherspace!
+
+With one click of your browser you've just taken several years back in
+Internet time. Close your eyes and grip your terminal. Imagine there's
+no Websites (it's easy if you try). Imagine that there's a Commodore 64
+on your desk, or maybe a 386.
+
+Now open them again.
+
+You're in the year 1991, when University of Minnesota computer scientists,
+fed up with the limitations of FTP for downloading files and the overhead
+of having to log into computers for everything, decided to come up with
+a friendlier method of accessing data over the then largely vacant and
+much smaller Internet. The result was Gopher, a simple and easy to
+understand menu system that allowed once hideously complicated systems
+and services to be strung together for straightforward usage. And Gopher
+Was Good.
+
+In fact, Gopher was so good that for several years, Gopher sites sprang up
+all over. You could get weather reports on Gopher, news, mailing lists,
+even software.
+
+Then Mosaic came out barely a year or so later and plunged the world into
+darkness and all seemed lost under the choking strands of the World Wide
+Web. And Gopherspace lay all but forgotten.
+
+But Gopher's still out there. And what's more, you'll find it surprisingly
+useful, even years after the Web became a household word. Why?
+
+* It's easy to set up.
+* It's easy to write content for and facilitates organization.
+* It doesn't need much system power to run -- either from the server or
+  from your computer. It can run on systems with little CPU power or memory.
+* It supports many things that the Web does, even if it looks less attractive.
+  You can still view images, search and download programs, and ...
+* ... since Gopher has less data to transfer, it's frequently faster.
+
+Save the Gopher! Explore Gopherspace with Veronica-2 and find out about
+the hidden world the Gophers once dug. And think how different the world would
+be if that darn Mosaic had never been written ... :-)
+
+The Floodgap Systems master gopher contains many help files to assist you.
+Look for them. You can read them just by clicking on them. But if you get lost,
+send all your questions and requests to
+
+	gopher@floodgap.com
