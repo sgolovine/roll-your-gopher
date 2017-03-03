@@ -19,7 +19,7 @@ Check out this [article](https://github.com/sgolovine/roll-your-gopher/blob/mast
 
 It should also be noted, if you use a programming text editor that remaps TAB to a number of spaces, you want to make sure that feature is disabled.
 
-Although not required, I also highly recommend Firefox + OverbiteFF, it's a simple extension that lets you browse gopher:// sites using Firefox. 
+Although not required, I also highly recommend Firefox with the OverbiteFF extension, it's a simple extension that lets you browse gopher:// sites using Firefox. 
 
 [Get OverbiteFF](http://gopher.floodgap.com/overbite/) 
 
@@ -29,7 +29,7 @@ There are many packages for Gopher these days. For the sake of this document we 
 	
 	sudo apt-get install pygopherd
 	
-Alternatively, you can install it from the Github Repository. I wont be getting into that in this article but the [PyGopherd](https://github.com/jgoerzen/pygopherd) PyGopherd repo gives pretty good instructions on how to do so. 
+Alternatively, you can install it from the Github Repository. I wont be getting into that in this document but the [PyGopherd](https://github.com/jgoerzen/pygopherd) repo gives pretty good instructions on how to do so. 
 
 Once installed, navigate to `localhost:70` (or the ip address of the server you installed it on) to confirm that it's working.
 
@@ -60,7 +60,7 @@ By default, the directory where your gopher-related files are stored is in `/var
 
 Now that you have gopher up and running, you might be wondering how to add content to it.
 
-Gopher is remarkably simple to write content for in that unlike traditional sites, you don't actually have to write any code per-say. In your default directory, if you remove the `gophermap` file and just start adding content like Text Documents, folder and pictures, Gopher will automatically pick those up and display them. 
+Gopher is remarkably simple to write content for in that unlike traditional sites, you don't actually have to write any code per-say. In your default directory, if you remove the `gophermap` file and just start adding content like Text Documents, folder and pictures, etc. Gopher will automatically pick those up and display them. 
 
 However the `gophermap` file can be quite useful. It acts as an `index.html` but for Gopher sites, giving you more control over structure and letting you add text to your pages.
 
@@ -120,6 +120,9 @@ To link to another directory:
 
 	1NewDirectory<tab>/newdir
 	
+	
+Please note here that having actual *tabs* seperating your name and directory is cruicial. They must be tabs otherwise Gopher simply displays this as text rather than a link.
+	
 Below is a table with all the supported gopher filetypes
 
 |Itemtype |Description      |
@@ -139,6 +142,32 @@ Adding any filetype follows the basic syntax above.
 #### Using Additional Gophermaps
 
 You can use additional gophermaps in subdirectories just like you did in your root. So if I created a directory called `foo`. I can set the directory structure inside of it using another gophermap. Just like I did for my root directory. 
+
+#### Linking to non-gopher sites
+
+Adding links in gopher to non-gopher (http) sites requires a slight workaround. If you were to add a link in your menu as such
+
+	hGoogle	http://www.google.com
+It would direct you to:
+
+	gopher://http//www.google.com/:70/h/Google
+	
+Not where we wanted to go. However, you can direct gopher to an HTML file which, once loaded, will redirect to the HTML site. A simple HTML file to do this would look as such:
+
+
+	<html>
+		<head>
+			<meta http-equiv="refresh" content="0; url=http://www.google.com" />
+		</head>
+		<body>
+			<a href="http://www.google.com">If you are not automaticaly redirected, click here</a>
+		</body>
+	</html>
+	
+This will redirect the user and give the user an option to redirect manually if the browser fails to do so. 
+
+
+
 
 
 
